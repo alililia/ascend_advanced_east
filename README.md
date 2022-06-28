@@ -131,10 +131,6 @@ If you have the checkpoint of VGG16, you can load the parameters in this way, th
 python train.py  --device_target="Ascend" --is_distributed=0 --device_id=0  > output.train.log 2>&1 &
 ```
 
-- single 
-
-```bash
-python train.py  --device_target="" --is_distributed=0 --device_id=0  > output.train.log 2>&1 &
 ```
 
 - single device with specific size
@@ -152,14 +148,9 @@ bash run_distribute_train.sh [DATSET_PATH] [RANK_TABLE_FILE]
 
 The detailed training parameters are in /src/config.py。
 
-- multi s
 
-```bash
-# running on distributed environment（8p）
-bash scripts/run_distribute_train_.sh
-```
 
-The detailed training parameters are in /src/config.py。
+
 
 config.py：
 
